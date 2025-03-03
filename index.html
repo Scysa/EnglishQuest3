@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning Games</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #89ABE3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #FCF6F5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: #FCF6F5;
+            opacity: 0.9;
+        }
+
+        .card-front {
+            background: #FCF6F5;
+            border: 2px solid #89ABE3;
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #89ABE3 0%, #7b9bd3 100%);
+            color: #FCF6F5;
+        }
+
+        .game-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            color: #89ABE3;
+        }
+
+        .game-card h2 {
+            color: #89ABE3;
+            font-size: 1.8em;
+        }
+
+        .play-btn {
+            background: #89ABE3;
+            color: #FCF6F5;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #FCF6F5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .play-btn:hover {
+            background: #7b9bd3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-card {
+            box-shadow: 0 10px 20px rgba(137, 171, 227, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(137, 171, 227, 0.3);
+        }
+
+        .card-back p {
+            color: #fefefe;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>English Learning Games</h1>
+        <p>Choose a game and start learning</p>
+    </div>
+
+    <div class="game-selection">
+        <div class="game-card" onclick="location.href='quiz.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="game-icon">📝</div>
+                    <h2>Quiz Game</h2>
+                </div>
+                <div class="card-back">
+                    <p>Test your English knowledge with multiple-choice questions</p>
+                    <div class="play-btn">Play Now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" onclick="location.href='scramble.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="game-icon">🔤</div>
+                    <h2>Word Scramble</h2>
+                </div>
+                <div class="card-back">
+                    <p>Unscramble letters to form correct English words</p>
+                    <div class="play-btn">Play Now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" onclick="location.href='correction.html'">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="game-icon">✍️</div>
+                    <h2>Sentence Correction</h2>
+                </div>
+                <div class="card-back">
+                    <p>Fix incorrect sentences to improve your grammar</p>
+                    <div class="play-btn">Play Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

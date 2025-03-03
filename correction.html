@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Correction Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="correction">
+    <header>
+        <h1>Sentence Correction Game</h1>
+    </header>
+    <div id="lives"></div>
+    <div class="status-container">
+        <div id="lives-display"></div>
+        <div class="coins-display">
+            <div class="coin-icon">🪙</div>
+            <span class="coin-count" id="coin-count">0</span>
+        </div>
+    </div>
+    <div class="power-ups-container">
+        <button class="power-up-btn" id="skipBtn">
+            ⏭️ Skip <span class="coin">2</span>
+        </button>
+        <button class="power-up-btn" id="lifeBtn">
+            ❤️ Life <span class="coin">3</span>
+        </button>
+        <button class="power-up-btn" id="revealBtn">
+            🔍 Reveal <span class="coin">4</span>
+        </button>
+    </div>
+    <div class="container">
+        <p id="incorrect-sentence"></p>
+        <input type="text" id="correction-input" placeholder="Type the correct sentence">
+        <button id="submit-button">Submit</button>
+    </div>
+    <div id="hint-container">
+        <button id="hint-button">Get Hint</button>
+        <p id="hint-display"></p>
+    </div>
+    <div class="back-button-container">
+        <button onclick="goBackToHome()">Back to Home</button>
+    </div>
+    <script src="correction.js" defer></script>
+</body>
+</html>

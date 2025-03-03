@@ -1,0 +1,1121 @@
+/* General Styles */
+
+@media (max-width: 1536px) {}
+@media (max-width: 1280px) {}
+@media (max-width: 1024px) {}
+@media (max-width: 768px) {}
+@media (max-width: 640px) {}
+@media (max-width: 480px) {}
+@media (max-width: 320px) {}
+
+
+body {
+    @import url(https://fonts.googleapis.com/css?family=Inclusive+Sans:regular,italic);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: #4a83b4;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#lives {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Shared Container Styles */
+.container {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(  #bdc3c7, #2c3e50 ) ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 1.5em;
+    opacity: 0.9;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.game-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+}
+.game-box {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-box h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* submit Button Styles */
+button {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Word Scramble Styles */
+body.scramble {
+    background-color: #d270f6;
+    color: #333;
+}
+
+/* contaienr for the quiz questions Quiz Styles */
+body.quiz {
+    background-color: #C7D3D4FF;
+    color: rgb(0, 0, 0);
+}
+
+.quiz-option {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-option:hover {
+    background-color: #0056b3;
+}
+
+.selected {
+    background-color: #f0f416 !important;
+}
+
+/* contaienr ofSentence Correction Styles */
+body.correction {
+    background-color: #fef4e4;
+    color: #333;
+}
+
+button.correction-btn {
+    background-color: #ff9800;
+}
+
+button.correction-btn:hover {
+    background-color: #e68900;
+}
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadein 2s forwards;
+}
+
+.popup.correct {
+    background: rgba(40, 167, 69, 0.9); /* Green for correct */
+}
+
+.popup.wrong {
+    background: rgba(220, 53, 69, 0.9); /* Red for wrong */
+}
+
+.popup.coin-earned {
+    background: rgba(255, 215, 0, 0.9);
+    color: #000;
+    animation: coinPop 0.5s ease-out;
+}
+
+.popup.no-coins {
+    background: linear-gradient(45deg, #ff9800, #f44336);
+    color: white;
+    animation: noCoinsPopup 2s ease-in-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes coinPop {
+    0% { transform: translate(-50%, -50%) scale(0); }
+    70% { transform: translate(-50%, -50%) scale(1.2); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.back-button-container {
+    margin-top: 20px;
+}
+
+.back-button-container button {
+    padding: 10px 15px;
+    background-color: #4278b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-container button:hover {
+    background-color: #4d97e7;
+}
+/* General button hover effect */
+button {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.4); /* Slightly increase size */
+    background-color: #007bff; /* Add slight color change for feedback */
+}
+
+/* For back button */
+.back-button-container button:hover {
+    transform: scale(1.1);
+    background-color: #1d0085; /* Different background for back button */
+}
+/* Game selection buttons */
+.game-option {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.game-option:hover {
+    transform: scale(1.1);
+    background-color: #218838;
+}
+.correct-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+}
+
+#hint-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#hint-button {
+    padding: 10px 15px;
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#hint-button:hover {
+    background-color: #f3be74;
+    transform: scale(1.1);
+}
+
+#hint-display {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Status container (hearts and coins) */
+.status-container {
+    position: sticky;
+    top: 100px; /* Adjust this value to move it down */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+#lives-display, .coins-display {
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+#lives-display {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 24px;
+    padding: 6px 12px;
+    background: linear-gradient(45deg, #fff, #f8f8f8);
+    border: 2px solid #ff9999;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.coins-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: linear-gradient(45deg, #fff, #f8f8f8);
+    border: 2px solid #daa520;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Remove any other coin display styles */
+#coins-display {
+    display: none;
+}
+
+.coin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid #daa520;
+    animation: coinSpin 0.5s ease-out;
+}
+
+.coin-sticker {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #daa520;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: coinPopup 1s ease-out forwards;
+    z-index: 1000;
+}
+
+.coin-icon {
+    font-size: 24px;
+}
+
+.coin-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+}
+
+@keyframes coinSpin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+@keyframes coinPopup {
+    0% { 
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    50% { 
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    100% { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+.coin-count {
+    font-weight: bold;
+    color: #000;
+}
+
+.power-up-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.power-up-btn {
+    background: linear-gradient(45deg, #a52929, #e40808);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Power-ups container */
+.power-ups-container {
+    margin-top: 180px; /* Increase this to avoid overlap */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .status-container {
+        flex-direction: column;
+        top: 90px; /* Adjust for mobile */
+    }
+    
+    .power-ups-container {
+        margin-top: 200px; /* Increase spacing for small screens */
+    }
+}
+.power-up-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ed0909, #ff0000);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.power-up-btn .coin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    border-radius: 50%;
+    margin-left: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid #daa520;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.power-up-btn:hover {
+    transform: scale(2);
+}
+
+.power-up-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.reveal-highlight {
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    border: 2px solid #daa520;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    animation: pulse 1s infinite;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.coin-earned {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    border-radius: 25px;
+    border: 2px solid #daa520;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: coinPopup 1s ease-out forwards;
+    z-index: 1000;
+}
+
+.coins-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #fff, #f0f0f0);
+    border: 2px solid #daa520;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.coin-icon {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #ffd700, #ffb900);
+    border: 2px solid #daa520;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.coin-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.coin-update {
+    animation: coinPop 0.3s ease-out;
+}
+
+@keyframes coinPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+/*  SCRAMBLE PALA TO container for the questions */
+.game-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #E0D8DE 0%, #E0D8DE 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.word-display {
+    font-size: 32px;
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.input-section {
+    display: flex;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+#user-input {
+    flex: 1;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: 2px solid #80deea;
+    border-radius: 12px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #00acc1;
+    box-shadow: 0 0 0 3px rgba(0, 172, 193, 0.2);
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #00acc1 0%, #0097a7 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.power-ups-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+/* powerup btn legit] */
+
+.power-up-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #FC2F00 0%, #EC7D10 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.power-up-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hint-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+
+/* Game Selection Container Styles */
+.games-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.game-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.game-card:hover::before {
+    opacity: 0.1;
+}
+
+.game-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-icon {
+    transform: scale(1.1);
+}
+
+.game-title {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.game-description {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.play-button {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.welcome-header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInDown 1s ease;
+}
+
+.welcome-header h1 {
+    font-size: 3.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.welcome-header p {
+    color: #7f8c8d;
+    font-size: 1.2em;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game-card {
+    animation: fadeInUp 0.6s ease;
+    animation-fill-mode: both;
+}
+
+.game-card:nth-child(1) { animation-delay: 0.2s; }
+.game-card:nth-child(2) { animation-delay: 0.4s; }
+.game-card:nth-child(3) { animation-delay: 0.6s; }
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.main-title {
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: white;
+    opacity: 0.9;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+.game-card:nth-child(1) { animation-delay: 0.2s; }
+.game-card:nth-child(2) { animation-delay: 0.4s; }
+.game-card:nth-child(3) { animation-delay: 0.6s; }
+
+.game-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.game-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-icon {
+    transform: scale(1.1);
+}
+
+.game-card h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.game-card button {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.game-card button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game-button {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.game-button:hover {
+    transform: scale(1.05);
+}
+
+.game-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.game-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+}
+
+.game-icon {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: #4CAF50;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Container for the entire game area */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Container for the coin display and other controls */
+.controls-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Coin display styling */
+.coins-display {
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* Home button styling */
+#home-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Ensure the home button and coin display are spaced out */
+.controls-container > * {
+    margin: 0 10px;
+}
+
+/* Title styling */
+.game-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .controls-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls-container > * {
+        margin: 10px 0;
+    }
+
+    .coins-display {
+        font-size: 16px;
+    }
+
+    #home-button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .game-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .coins-display {
+        font-size: 14px;
+    }
+
+    #home-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .game-title {
+        font-size: 24px;
+    }
+}

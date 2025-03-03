@@ -1,0 +1,84 @@
+<div class="game-container">
+    <div class="level-container">
+        <div class="level-header">
+            <span class="level-number"></span>
+            <div class="level-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">0/3</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Existing game content -->
+    ...existing code...
+</div>
+
+<style>
+.level-container {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.level-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.level-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.level-progress {
+    flex: 1;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.level-up-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    padding: 20px 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    animation: popIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1000;
+}
+
+@keyframes popIn {
+    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+</style>

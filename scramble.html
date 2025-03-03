@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add level system script before game script -->
+    <script src="scramble.js" defer></script>
+</head>
+<body class="scramble">
+    <div class="game-container">
+        <header>
+            <h1>Word Scramble Game</h1>
+        </header>
+        <!-- This div displays the number of lives remaining in the game -->
+        <div id="lives"></div> 
+        <div class="container">
+            <p id="scrambled-word"></p>
+            <input type="text" id="user-input" placeholder="Type your answer">
+            <button id="submit-button">Submit</button>
+            <p id="scramble-result"></p>
+        </div>
+        <div class="status-container">
+            <div id="lives-display"></div>
+            <div class="coins-display">
+                <div class="coin-icon">🪙</div>
+                <span class="coin-count" id="coin-count">0</span>
+            </div>
+        </div>
+        <div class="power-ups-container">
+            <button class="power-up-btn" id="skipBtn">
+                ⏭️ Skip <span class="coin">2</span>
+            </button>
+            <button class="power-up-btn" id="lifeBtn">
+                ❤️ Life <span class="coin">3</span>
+            </button>
+            <button class="power-up-btn" id="revealBtn">
+                🔍 Reveal <span class="coin">4</span>
+            </button>
+        </div>
+        <div id="hint-container">
+            <button id="hint-button">Get Hint</button>
+            <p id="hint-display"></p>
+        </div>
+        <div class="back-button-container">
+            <button onclick="goBackToHome()">Back to Home</button>
+        </div>  
+    </div>
+</body>
+</html>
