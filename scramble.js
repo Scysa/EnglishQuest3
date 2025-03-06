@@ -1,9 +1,9 @@
-    { word: "happy ''feeling or showing pleasure or contentment.'", hint: "Feeling joy and pleasure", difficulty: "easy" },
-    { word: "smile 'a facial expression showing happiness'", hint: "Expression of happiness", difficulty: "easy" },
-    { word: "brave 'showing courage and fearlessness'", hint: "Showing courage", difficulty: "easy" },
-    { word: "quiet 'making little or no noise'", hint: "Making little noise", difficulty: "easy" },
-    { word: "clean 'free from dirt or mess'", hint: "Free from dirt", difficulty: "easy" },
-    { word: "kind 'being friendly, generous, and considerate'", hint: "Being friendly and gentle", difficulty: "easy" },
+    { word: "happy", hint: "Feeling joy and pleasure", difficulty: "easy" },
+    { word: "smile", hint: "Expression of happiness", difficulty: "easy" },
+    { word: "brave", hint: "Showing courage", difficulty: "easy" },
+    { word: "quiet", hint: "Making little noise", difficulty: "easy" },
+    { word: "clean", hint: "Free from dirt", difficulty: "easy" },
+    { word: "kind", hint: "Being friendly and gentle", difficulty: "easy" },
 ];
 
 const POWER_UPS = {
