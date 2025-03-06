@@ -1,9 +1,17 @@
-    { word: "happy", hint: "Feeling joy and pleasure", difficulty: "easy" },
+     { word: "happy ''feeling or showing pleasure or contentment.'", hint: "Feeling joy and pleasure", difficulty: "easy" },
     { word: "smile", hint: "Expression of happiness", difficulty: "easy" },
     { word: "brave", hint: "Showing courage", difficulty: "easy" },
     { word: "quiet", hint: "Making little noise", difficulty: "easy" },
     { word: "clean", hint: "Free from dirt", difficulty: "easy" },
     { word: "kind", hint: "Being friendly and gentle", difficulty: "easy" },
+
+    // MEDIUM LEVEL (6-8 letters)
+    { word: "freedom", hint: "State of being free", difficulty: "medium" },
+    { word: "courage", hint: "Facing fear with confidence", difficulty: "medium" },
+    { word: "respect", hint: "Deep admiration", difficulty: "medium" },
+    { word: "healthy", hint: "In good condition", difficulty: "medium" },
+    { word: "success", hint: "Achievement of a goal", difficulty: "medium" },
+    { word: "wisdom", hint: "Knowledge and good judgment", difficulty: "medium" },
 ];
 
 const POWER_UPS = {
