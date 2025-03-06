@@ -1,5 +1,6 @@
 const words = [
-      { word: "happy ''feeling or showing pleasure or contentment.'", hint: "Feeling joy and pleasure", difficulty: "easy" },
+    // EASY LEVEL (4-6 letters)
+    { word: "happy", hint: "Feeling joy and pleasure", difficulty: "easy" },
     { word: "smile", hint: "Expression of happiness", difficulty: "easy" },
     { word: "brave", hint: "Showing courage", difficulty: "easy" },
     { word: "quiet", hint: "Making little noise", difficulty: "easy" },
