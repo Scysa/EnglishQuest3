@@ -1,24 +1,9 @@
-const words = [
-    { word: "happy 'feeling or showing pleasure or contentment'", hint: "Feeling joy and pleasure", difficulty: "easy" },
+    { word: "happy ''feeling or showing pleasure or contentment.'", hint: "Feeling joy and pleasure", difficulty: "easy" },
     { word: "smile 'a facial expression showing happiness'", hint: "Expression of happiness", difficulty: "easy" },
     { word: "brave 'showing courage and fearlessness'", hint: "Showing courage", difficulty: "easy" },
     { word: "quiet 'making little or no noise'", hint: "Making little noise", difficulty: "easy" },
     { word: "clean 'free from dirt or mess'", hint: "Free from dirt", difficulty: "easy" },
     { word: "kind 'being friendly, generous, and considerate'", hint: "Being friendly and gentle", difficulty: "easy" },
-
-    // MEDIUM LEVEL (6-8 letters)
-    { word: "freedom 'the state of being free from restrictions'", hint: "State of being free", difficulty: "medium" },
-    { word: "courage 'the ability to face fear with confidence'", hint: "Facing fear with confidence", difficulty: "medium" },
-    { word: "respect 'a feeling of deep admiration for someone'", hint: "Deep admiration", difficulty: "medium" },
-    { word: "healthy 'being in a good physical and mental condition'", hint: "In good condition", difficulty: "medium" },
-    { word: "success 'the achievement of a goal or purpose'", hint: "Achievement of a goal", difficulty: "medium" },
-    { word: "wisdom 'the ability to make good judgments based on knowledge'", hint: "Knowledge and good judgment", difficulty: "medium" },
-
-    // HARD LEVEL (8-10 letters)
-    { word: "confident 'feeling sure about oneself and one's abilities'", hint: "Feeling sure about something", difficulty: "hard" },
-    { word: "excellent 'extremely good or outstanding in quality'", hint: "Exceptionally good", difficulty: "hard" },
-    { word: "determine 'to decide firmly or establish something with purpose'", hint: "To decide firmly", difficulty: "hard" },
-    { word: "grateful 'feeling or showing appreciation and thanks'", hint: "Feeling thankful", difficulty: "hard" },
 ];
 
 const POWER_UPS = {
